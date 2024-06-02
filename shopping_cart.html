@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+
+</head>
+<body>
+    <!--nav bar, search bar-->
+    <nav>
+        <ul class="navbar">
+            <li><a href="">The MCCorry Collections</a></li>
+            <li><a href="">Art</a></li>
+            <li><a href="">Pottery</a></li>
+            <li><a href="">Emporium</a></li>
+            <input type="text" placeholder="Search..">
+            <li><a href=""><img src="images/shopping-bag.svg"> </a></li>
+        </ul>
+    </nav>
+
+    <div class="checkout">
+        <div class="checkout_processes">
+            <div class="checkout_process">1</div>
+            CART
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">2</div>
+            INFORMATION
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">3</div>
+            SHIPPING
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">4</div>
+            PAYMENT
+        </div>
+        <div class="checkout_processes">
+            <div class="checkout_process">5</div>
+            COMPLETE
+        </div>
+    </div>
+
+    <!--<button class="default_button" onclick="emptyCart()">X</button   do we want this button?-->
+
+    <div class="basiclayout">
+        <div id="shopping_cart">
+            <h1>Shopping Cart</h1>
+            <div class="header_items">
+                <h3 class="header_item">Product(s)</h3>
+                <h3 class="header_item">Quantity</h3>
+                <h3 class="header_item">Price</h3>
+            </div>
+            <div id="cart_items">
+            </div>
+            <p class="subtotal"> SUBTOTAL <span id="total_subtotal">$0</span></p>
+        </div>
+        <div class="checkout_button_container">
+            <button class="checkout_buttons" onclick= "window.location.href = 'information.html';">Checkout</button>
+        </div>
+
+    </div>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+   <!-- bought together -- suggested products -->
+   <div class="similar_products">
+    <h3>Often bought together</h3>
+    <div class="catalogue">
+        <div>
+            <a href="new_moon_tumbler.html">
+                <img src="images/pottery/new_moon_tumbler_1.webp"></img>
+                <p class="product_name">New Moon Tumbler</p>
+                <p class="price">$65</p>
+            </a>
+        </div>
+        <div>
+            <a href="big_serving_dish.html">
+                <img src="images/pottery/big_serving_dish_1.webp"></img>
+                <p class="product_name">Big Serving Dish</p>
+                <p class="price">$65</p>
+            </a>
+        </div>
+        <div>
+            <a href="short_mug.html">
+                <img src="images/pottery/short_mug_1.webp"></img>
+                <p class="product_name">Short Mug</p>
+                <p class="price">$60</p>
+            </a>
+        </div>            
+        <div>
+            <a href="short_beads_tumbler.html">
+                <img src="images/pottery/short_beads_tumbler_1.webp"></img>
+                <p class="product_name">Short Beads Tumbler</p>
+                <p class="price">$75</p>
+            </a>
+        </div>
+    </div>
+</div>
+    
+</body>
+
+
+<!-- footer -->
+<footer>
+    <div>
+    <h5>HOW CAN WE HELP YOU?</h5>
+    <p>Contact Us</p>
+    <p>My Account</p>
+    <p>FAQs</p>
+    <p>Unsubscribe</p>
+    <p>Payment Plans</p>
+    </div>
+
+    <div>
+        <h5>ABOUT THE MCCORRY COLLECTION</h5>
+        <p>About Us</p>
+        <p>Privacy & Coookie Policy</p>
+    </div>
+
+    <div>
+        <h5>SIGN UP TO OUR NEWSLETTER</h5>
+        <input type="text" placeholder="Email">
+        <p>LANGUAGE</p>
+        <p>English</p>
+        <p>CURRENCY</p>
+        <p>$ AUD</p>
+        <p>Follow Us</p>
+        </div>
+</footer>
+
+
+</html>
